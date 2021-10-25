@@ -51,17 +51,17 @@ header .menu {
     color: #fff;
 }
 
-.apresentaçao {
+.apresentacao {
     height: 100vh;
     align-items: center;
     justify-content: space-between;
 }
 
-.apresentaçao .texto-apresentaçao  {
+.apresentacao .texto-apresentacao  {
     min-height: 200px;
 }
 
-.texto-apresentaçao h1{
+.texto-apresentacao h1{
     color: #122A57;
     font-size: 48px;
     margin-bottom: 10px;
@@ -79,6 +79,7 @@ header .menu {
     line-height: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: all .3s;
 }
 .btn:hover {
     background-color: #090d3e;
@@ -124,24 +125,24 @@ header .menu {
     background-color: #122A57;
     width: 100%;
 }
-#serviços {
+#servicos {
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 100px;
 }
-#serviços h2 {
+#servicos h2 {
     color: #fff;
     font-size: 32px;
     margin-bottom: 50px;
 }
-.list-serviços {
+.list-servicos {
     display: flex;
     justify-content: space-between;
 }
-.list-serviços .item-serviço {
+.list-servicos .item-servico {
     text-align: center;
 }
-.item-serviço a {
+.item-servico a {
     width: 220px;
     background-color: #fff;
     border-radius: 30px;
@@ -156,13 +157,13 @@ header .menu {
     font-weight: 700;
 }
 
-.item-serviço p {
+.item-servico p {
     font-weight: 700;
     font-size: 20px;
     color: #fff;
     margin-top: 20px;
 }
-.item-serviço img{
+.item-servico img{
     width: 80%;
     margin: auto;
 }
@@ -225,7 +226,7 @@ header .menu {
 }
 footer{
     background-color:#122A57 ;
-    height: 70px;
+    min-height: 70px;
     display: flex;
     align-items: center;
 }
@@ -241,15 +242,19 @@ footer .footer {
         flex-direction: column;
     }
 
-    .apresentaçao {
+    .apresentacao {
         flex-direction: column-reverse;
         height: auto;
     }
-    .apresentaçao .texto-apresentaçao{
+    .apresentacao .texto-apresentacao{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     #quem-somos{
         flex-direction: column-reverse;
+        padding: 7px;
     }
     #quem-somos img{
         width: 100%;
@@ -257,10 +262,10 @@ footer .footer {
 
     }
 
-    .list-serviços{
+    .list-servicos{
         flex-direction: column;
     }
-    .item-serviço img {
+    .item-servico img {
         width: 50%;
         margin: auto;
     }
@@ -275,9 +280,11 @@ footer .footer {
         width: 100%;
         margin-bottom: 20px;
     }
-    .apresentaçao img {
+    .apresentacao img {
         width: 100%;
         min-width: unset;
     }
-    
+    .footer{
+        text-align: center;
+    }
 }
